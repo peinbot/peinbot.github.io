@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>provehim.dumbass</title>
+    <script src="../js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/prove it.css">
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body myFunction()>
+    <div id="canvas" class="canvas">
+
+        <button class="tablink" onclick="openCity('London', this, 'orange')" id="defaultOpen">Faces</button>
+        <button class="tablink" onclick="openCity('Paris', this, 'orange')">Eyes</button>
+        <button class="tablink" onclick="openCity('Tokyo', this, 'orange')">Mouths</button>
+
+        <div id="London" class="tabcontent">
+        <h3>Faces</h3>
+            <span class="dot" id="yellow"></span>
+            <span class="dot" id="red"></span>
+            <span class="dot" id="green"></span>      
+          <p>Select a face.</p>
+        </div>
+        
+        <div id="Paris" class="tabcontent">
+          <h3>Eyes</h3>
+              <div id="container1">
+                <img class="pic" id="eyes1" src="../images/eyes/eyes1.png" width="100" height="78">
+                <img class="pic" id="eyes2" src="../images/eyes/eyes2.png" width="100" height="78">
+                <img class="pic" id="eyes3" src="../images/eyes/eyes3.png" width="100" height="78">
+                <img class="pic" id="eyes4" src="../images/eyes/eyes4.png" width="100" height="78">
+                <img class="pic" id="eyes5" src="../images/eyes/eyes5.png" width="100" height="78">
+                <img class="pic" id="eyes6" src="../images/eyes/eyes6.png" width="100" height="78">
+              </div>
+          <p>Select the Eyes.</p> 
+        </div>
+        
+        <div id="Tokyo" class="tabcontent">
+          <h3>Mouths</h3>
+              <div id="container2">
+                <img class="mouth" id="mouths1" src="../images/mouths/mouth1.png" width="70" height="70">
+                <img class="mouth" id="mouths2" src="../images/mouths/mouth2.png" width="70" height="70">
+                <img class="mouth" id="mouths3" src="../images/mouths/mouth3.png" width="70" height="70">
+                <img class="mouth" id="mouths4" src="../images/mouths/mouth4.png" width="70" height="70">
+                <img class="mouth" id="mouths5" src="../images/mouths/mouth5.png" width="70" height="70">
+                <img class="mouth" id="mouths6" src="../images/mouths/mouth6.png" width="70" height="70">
+                <img class="mouth" id="mouths7" src="../images/mouths/mouth7.png" width="70" height="70">
+              </div>          
+            <p>Select a mouth.</p>
+        </div>
+    
+    </div>    
+   
+    <div class="vertline"></div>
+
+    <div class="emoji1" id="emoji1"></div>
+    <div class="emoji2" id="emoji2"></div>
+    <div class="emoji3" id="emoji3"></div>
+
+    <div class="emojiBorder" id="emojiBorder"></div>
+
+    <img id="eye1" src="../images/eyes/eyes1.png">
+    <img id="eye2" src="../images/eyes/eyes2.png">
+    <img id="eye3" src="../images/eyes/eyes3.png">
+    <img id="eye4" src="../images/eyes/eyes4.png">
+    <img id="eye5" src="../images/eyes/eyes5.png">
+    <img id="eye6" src="../images/eyes/eyes6.png">
+
+    <img id="mouth1" src="../images/mouths/mouth1.png">
+    <img id="mouth2" src="../images/mouths/mouth2.png">
+    <img id="mouth3" src="../images/mouths/mouth3.png">
+    <img id="mouth4" src="../images/mouths/mouth4.png">
+    <img id="mouth5" src="../images/mouths/mouth5.png">
+    <img id="mouth6" src="../images/mouths/mouth6.png">
+    <img id="mouth7" src="../images/mouths/mouth7.png">
+
+    <script>
+        var showEmoji1 = document.getElementById("yellow")
+        var showEmoji2 = document.getElementById("red")
+        var showEmoji3 = document.getElementById("green")
+
+    showEmoji1.onclick = function() {
+        emoji1.style.display = "block";
+        emoji2.style.display = "none";
+        emoji3.style.display = "none"
+    }
+    showEmoji2.onclick = function() {
+        emoji2.style.display = "block";
+        emoji1.style.display = "none";
+        emoji3.style.display = "none";
+    }
+    showEmoji3.onclick = function() {
+        emoji3.style.display = "block";
+        emoji2.style.display = "none";
+        emoji1.style.display = "none";
+    }
+
+    var eye1 = document.getElementById("eye1")
+    var eye2 = document.getElementById("eye2")
+    var eye3 = document.getElementById("eye3")
+    var eye4 = document.getElementById("eye4")
+    var eye5 = document.getElementById("eye5")
+    var eye6 = document.getElementById("eye6")
+
+    var eyes1 = document.getElementById("eyes1")
+    var eyes2 = document.getElementById("eyes2")
+    var eyes3 = document.getElementById("eyes3")
+    var eyes4 = document.getElementById("eyes4")
+    var eyes5 = document.getElementById("eyes5")
+    var eyes6 = document.getElementById("eyes6")
+
+    eyes1.onclick = function() {
+        eye1.style.display = "block"
+        eye6.style.display = "none"
+        eye5.style.display = "none"
+        eye4.style.display = "none"
+        eye3.style.display = "none"
+        eye2.style.display = "none"
+    }
+    eyes2.onclick = function() {
+        eye2.style.display = "block"
+        eye1.style.display = "none"
+        eye3.style.display = "none"
+        eye4.style.display = "none"
+        eye5.style.display = "none"
+        eye6.style.display = "none"
+    }
+    eyes3.onclick = function() {
+        eye3.style.display = "block"
+        eye2.style.display = "none"
+        eye1.style.display = "none"
+        eye4.style.display = "none"
+        eye5.style.display = "none"
+        eye6.style.display = "none"
+    }
+    eyes4.onclick = function() {
+        eye4.style.display = "block"
+        eye3.style.display = "none"
+        eye2.style.display = "none"
+        eye1.style.display = "none"
+        eye5.style.display = "none"
+        eye6.style.display = "none"
+    }
+    eyes5.onclick = function() {
+        eye5.style.display = "block"
+        eye4.style.display = "none"
+        eye3.style.display = "none"
+        eye2.style.display = "none"
+        eye1.style.display = "none"
+        eye6.style.display = "none"
+    }
+    eyes6.onclick = function() {
+        eye6.style.display = "block"
+        eye5.style.display = "none"
+        eye4.style.display = "none"
+        eye3.style.display = "none"
+        eye2.style.display = "none"
+        eye1.style.display = "none"
+    }
+
+    var eye1 = document.getElementById("eye1")
+    var eye2 = document.getElementById("eye2")
+    var eye3 = document.getElementById("eye3")
+    var eye4 = document.getElementById("eye4")
+    var eye5 = document.getElementById("eye5")
+    var eye6 = document.getElementById("eye6")
+    var eye7 = document.getElementById("eye7")
+
+    var eyes1 = document.getElementById("eyes1")
+    var eyes2 = document.getElementById("eyes2")
+    var eyes3 = document.getElementById("eyes3")
+    var eyes4 = document.getElementById("eyes4")
+    var eyes5 = document.getElementById("eyes5")
+    var eyes6 = document.getElementById("eyes6")
+    var eyes7 = document.getElementById("eyes7")
+
+    mouths1.onclick = function() {
+        mouth1.style.display = "block"
+        mouth2.style.display = "none"
+        mouth3.style.display = "none"
+        mouth4.style.display = "none"
+        mouth5.style.display = "none"
+        mouth6.style.display = "none"
+        mouth7.style.display = "none"
+    }
+    mouths2.onclick = function() {
+        mouth2.style.display = "block"
+        mouth1.style.display = "none"
+        mouth3.style.display = "none"
+        mouth4.style.display = "none"
+        mouth5.style.display = "none"
+        mouth6.style.display = "none"
+        mouth7.style.display = "none"
+    }
+    mouths3.onclick = function() {
+        mouth3.style.display = "block"
+        mouth1.style.display = "none"
+        mouth2.style.display = "none"
+        mouth4.style.display = "none"
+        mouth5.style.display = "none"
+        mouth6.style.display = "none"
+        mouth7.style.display = "none"
+    }
+    mouths4.onclick = function() {
+        mouth4.style.display = "block"
+        mouth1.style.display = "none"
+        mouth2.style.display = "none"
+        mouth3.style.display = "none"
+        mouth5.style.display = "none"
+        mouth6.style.display = "none"
+        mouth7.style.display = "none"
+    }
+    mouths5.onclick = function() {
+        mouth5.style.display = "block"
+        mouth1.style.display = "none"
+        mouth2.style.display = "none"
+        mouth3.style.display = "none"
+        mouth4.style.display = "none"
+        mouth6.style.display = "none"
+        mouth7.style.display = "none"
+    }
+    mouths6.onclick = function() {
+        mouth6.style.display = "block"
+        mouth1.style.display = "none"
+        mouth2.style.display = "none"
+        mouth3.style.display = "none"
+        mouth4.style.display = "none"
+        mouth5.style.display = "none"
+        mouth7.style.display = "none"
+    }
+    mouths7.onclick = function() {
+        mouth7.style.display = "block"
+        mouth1.style.display = "none"
+        mouth2.style.display = "none"
+        mouth3.style.display = "none"
+        mouth4.style.display = "none"
+        mouth5.style.display = "none"
+        mouth6.style.display = "none"
+        
+    }
+
+    //   Yo' man *_*....I was tryna make the audio start playing as soon as the webpage 
+    //   loads but got lost ya know ^_^ ...ain't that good in JS. ...my bad. 
+    // var audio = document.getElementById("theme")
+    // var myFunction = document.getElementsByTagName("body")
+    // console.log("myFunction")
+
+    // myFunction.onload = function() {
+    //     audio.play();
+    // }
+    
+    </script>
+    
+    <audio class="theme" id="theme" controls loop>
+        <source src="../audios/Naruto Shippuuden - The War Begins Theme.mp3" type="audio/mpeg">
+    </audio>
+
+    <img class="header" id="header" src="../images/header.png">
+
+</body>
+</html>

@@ -1,0 +1,323 @@
+body{
+    background-color: rgba(71, 60, 60, 0.5);
+    font-weight: bold;
+    font-size: 18px;
+    font-family: verdana;
+}
+
+.canvas {
+    position: absolute;
+    float: left;
+    left: 20%;
+    top: 25%;
+    
+}
+
+#canvas {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 55%;
+    width: 60%;
+    box-shadow: 3px 8px 16px 3px rgba(14, 14, 14, 0.8);
+}
+
+.tablink {
+    background-color: #555;
+    color: black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 18.1%;
+    font-weight: bold;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+.tabcontent {
+    color: black;
+    font-weight: bold;
+    display: none;
+    padding: 50px;
+    text-align: center;
+    width: 42%;
+    height: 72.8%;
+}
+#London,
+#Paris,
+#Tokyo {background-color:orange;}
+
+.vertline {
+    position: relative;
+    float: left;
+    left: 52.5%;
+    top: 159px;
+    border-left: 7px solid chocolate;
+    height: 367px
+}
+
+.dot {
+    height: 40%;
+    width: 30%;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#red {
+    background-color: red;
+}
+#yellow {
+    background-color: yellow;
+}
+#green {
+    background-color: green;
+}
+
+#red:hover,
+#yellow:hover,
+#green:hover {
+    background-color: rgba(206, 224, 228, 0.377);
+}
+
+
+#container1 {
+    display: inline-block;
+    padding: 6px 5px 6px 5px;
+}
+
+.pic {
+    border-radius: 50%;
+    background-color: white;    
+}
+.pic:hover {
+    background-color: yellowgreen;
+}
+
+#container2 {
+    display: inline-block;
+    padding: 20px 20px 20px 20px;
+}
+
+.mouth {
+    border-radius: 50%;
+    background-color: white;   
+}
+
+.mouth:hover {
+    background-color: yellowgreen;
+}
+
+.emoji1 {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+#emoji1 {
+    position: fixed;
+    float: left;
+    left: 55.4%;
+    top: 178px;
+    display: none;
+}
+
+.emoji2 {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+#emoji2 {
+    position: fixed;
+    float: left;
+    left: 55.4%;
+    top: 178px;
+    display: none;
+}
+
+.emoji3 {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+#emoji3 {
+    position: fixed;
+    float: left;
+    left: 55.4%;
+    top: 178px;
+   display: none;
+}
+
+.emojiBorder {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 7px solid ;
+}
+
+#emojiBorder {
+    position: fixed;
+    float: right;
+    right: 22.2%;
+    top: 172px;
+}
+
+#eye1 {
+    position: absolute;
+    float: left;
+    left: 58%;
+    top: 200px;
+    width: 20%;
+    z-index: 1;
+    display: none;
+}
+
+#eye2 {
+    position: absolute;
+    float: left;
+    left: 60%;
+    top: 250px;
+    width: 20%;
+    z-index: 1;
+    display: none;
+    
+}
+ 
+#eye3 {
+    position: absolute;
+    float: left;
+    left: 57%;
+    top: 280px;
+    width: 20%;
+    z-index: 1;
+    display: none;
+}
+
+#eye4 {
+    position: absolute;
+    float: left;
+    left: 56.5%;
+    top: 230px;
+    width: 20%;
+    z-index: 1;
+    display: none;
+}
+
+#eye5 {
+    position: absolute;
+    float: left;
+    left: 56.5%;
+    top: 240px;
+    width: 20%;
+    z-index: 1;
+    display: none;
+}
+
+#eye6 {
+    position: absolute;
+    float: left;
+    left: 56.5%;
+    top: 220px;
+    width: 20%;
+    z-index: 1;
+    display: none;
+}
+
+#mouth1 {
+    position: absolute;
+    float: left;
+    left: 58%;
+    top: 300px;
+    width: 17%;
+    display: none;
+}
+
+#mouth2 {
+    position: absolute;
+    float: left;
+    left: 58%;
+    top: 300px;
+    width: 17%;
+    display: none;
+}
+
+#mouth3 {
+    position: absolute;
+    float: left;
+    left: 58%;
+    top: 300px;
+    width: 17%;
+    display: none;
+}
+
+#mouth4 {
+    position: absolute;
+    float: left;
+    left: 58%;
+    top: 300px;
+    width: 17%;
+    display: none;
+}
+
+#mouth5 {
+    position: absolute;
+    float: left;
+    left: 60.9%;
+    top: 296px;
+    width: 20%;
+    display: none;
+}
+
+#mouth6 {
+    position: absolute;
+    float: left;
+    left: 56.5%;
+    top: 307px;
+    width: 17%;
+    display: none;
+}
+
+#mouth7 {
+    position: absolute;
+    float: left;
+    left: 56%;
+    top: 350px;
+    width: 20%;
+    height: 20%;
+    display: none;
+}
+
+.theme {
+    width: 60.5%;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#theme {
+    position: fixed;
+    float: left;
+    left: 19.8%;
+    top: 535px;
+    border-radius: 50%;
+    box-shadow: 3px 8px 16px 3px rgba(14, 14, 14, 0.8);
+}
+
+.header {
+    width: 40%;
+    height: 160px;
+}
+
+#header {
+    position: fixed;
+    float: left;
+    left: 30%;
+
+}
